@@ -6,8 +6,7 @@ var RetiredForagerBee = function(food, eat, treasureChest) {
   this.color = 'grey';
 };
 
-RetiredForagerBee.prototype = new ForagerBee();
-
+RetiredForagerBee.prototype = Object.create(ForagerBee.prototype);
 RetiredForagerBee.prototype.constructor = RetiredForagerBee;
 
 RetiredForagerBee.prototype.forage = function() {
